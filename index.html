@@ -6,11 +6,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
      <script src="index.js"></script>
+
+
+
+     
 </head>
-<body>
+<body onscroll="bodyScroll();">
     <div class="scrolledBG">
     
-    <header class="header" >
+
+
+
+
+
+
+    <header class="header"  >
         <a href="#" class="logo" ><img src="imges/Untitled39_20240416201017.png" height="27px"><h1>Aswin.</h1></a>
         <nav class="navbar">
             <a href="#home" class="header__link"><img src="imges/icons8-home-48.png" height="20px" class="img-front" id="img-front"><img src="imges/icons8-home-48 (1).png" height="20px" class="back-img" id="back-img1"></a>
@@ -20,12 +30,34 @@
         </nav>
        
     </header> 
+
+
+
+
+
+
+
+
     <div class="pop-info">
             <a class="home1" id="info"></a>
             <a class="about1"  ></a>
             <a class="videos1"></a>
             <a class="contact1"></a>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <section class="home" >
         <div>
         <div class="image" id="image"><img src="imges/unamed.png"></div>
@@ -37,21 +69,89 @@
             <p>"Let's collaborate to elevate your projects and make your vision a reality. Contact me today to explore how I can enhance your storytelling through the power of video editing."
             </p>
             <div class="btn-box">
-                <a href="#" >Hire Me</a>
-                <a href="#">Let's Talk
+                <a id="btn1" href="#" >Hire Me</a>
+                <a id="btn1" href="#">Let's Talk
                 </a>
             </div>
             </div>
         </div> 
 
+  <div class="back-color" id="back-color"></div>
+        <div class="login-box"  id="login-box" >
+        
+          <span class="close" id="closePopup">&times;</span>
+          <h2>Message</h2>
+      
+          <form action="https://formsubmit.co/msaswin660@gmail.com" method="POST">
+            <div class="user-box">
+              <input type="text" name="name" required>
+              <label>Name</label>
+            </div>
+            <div class="user-box">
+              <input type="email" name="email" required>
+              <label>Email Address</label>
+            </div>
+            <div class="user-box">
+             
+              <input type="text"name="subject" required value="Inquiry for Video Editing Services">
+              <label>Subject</label>
+
+
+            </div>
+      
+            <div class="user-box">
+             <h3>Message</h3>
+       <textarea name="msg" required >
+        I'm interested in hiring you as a video editor for an upcoming project.
+       </textarea>
+            </div>
+      
+          <button type="submit">
+          
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              
+             Submit
+          
+          </button> 
+          <input type="hidden" name="_autoresponse" value="Hi Thank You For Showing Interest In Me. For Further Details You Can Contact Me On These Platforms 
+          
+          Whatsapp  : 7034813942
+          Instagram :https://www.instagram.com/aswincr34/
+          linkedln  : 
+          Github    :   ">
+
+          <input type="hidden" name="_next" value="https://aswin2004hsdhfg.github.io/video-editing-web/">
+          
+          <input type="hidden" name="_captcha" value="false">
+          </form>
+        </div>
+      
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     <section class="about reveal" id="about">
         <!--  <div class="card" style="--clr:rgb(0, 81, 255);"></div>-->
-        <div class="icon" id="icon"><img src="imges/Untitled39_20240417105613.png"></div><div>
+        <div class="icon" id="icon"><img src="imges/blue moon.png"></div><div>
 
         <div class="about-content " data-background="#3498db">
             <h1>Hello, I'm Aswin M S</h1>
+            
             <p>
 
                 Hi! I'm Aswin MS, a passionate 19-year-old professional video editor hailing from the beautiful state of Kerala, India. With a keen eye for detail and a knack for storytelling, I specialize in crafting compelling long-form and short-form video content that captivates audiences worldwide.<br><br>
@@ -70,10 +170,56 @@
     </div>
             </section>
         
+
+
+
+
+
+
+
+
+
+
+
     <section class="videos" id="videos">
        
         <div class="videos-content">  
              <h1 id="content-size" class=" reveal">SHORT FORM CONTENT</h1>
+             
+
+    <aside>
+    <div class="mouse_scroll">
+
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <div class="un-overflow">
+        <span class="m_scroll_arrows unu"></span>
+        <span class="m_scroll_arrows doi"></span>
+        <span class="m_scroll_arrows trei"></span>
+      </div>
+  </div>
+
+  
+    <div class="mouse_scroll1">
+
+      <div class="mouse1">
+        <div class="wheel1"></div>
+      </div>
+      <div class="un-overflow">
+        <span class="m_scroll_arrows1 unu"></span>
+        <span class="m_scroll_arrows1 doi"></span>
+        <span class="m_scroll_arrows1 trei"></span>
+      </div>
+  </div>
+
+  </aside>
+
+
+
+
+
+
             <div class="short-form">
                 <div class="vid1 reveal" id="vid" ><iframe width="100%" height="100%" src="https://www.youtube.com/embed/ju2m8Gb6cN4" title="LeBron jxcxshvs Edit - My Eyes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
                 <div class="vid2 reveal" id="vid"><iframe width="100%"  height="100%" src="https://www.youtube.com/embed/ju2m8Gb6cN4" title="LeBron James Edit - My Eyes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -81,6 +227,9 @@
                 <div class="vid4 reveal" id="vid"><iframe width="100%"  height="100%" src="https://www.youtube.com/embed/cDXaDrC9fC4" title="BYMAXIMISE INSPIRED EDIT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
               </div>  
               <h1 id="content-size" class=" reveal">LONG FORM CONTENT</h1>
+              
+
+
               <div class="long-form">
                 <div class="vid5 reveal" id="vid1"><iframe width="100%" src="https://www.youtube.com/embed/iuhJs3u1gZY" title="portfolio made of Akshath" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
                 <div class="vid6 reveal" id="vid1"><iframe width="100%" src="https://www.youtube.com/embed/ewRWhS5k9qg" title="portfolio made for shaun lee (can you please provide me you email address or read description)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -89,6 +238,12 @@
             </div></div>
      
     </section>
+
+
+
+
+ 
+
     <footer>
         <div class="content">
           <div class="top">
@@ -136,7 +291,7 @@
         </div>
         <div class="bottom-details">
           <div class="bottom_text">
-            <span class="copyright_text">Copyright © 2021 <a href="#">ASWIN.</a>All rights reserved</span>
+            <span class="copyright_text">Copyright © 2023 <a href="#">ASWIN.</a>All rights reserved</span>
             <span class="policy_terms">
               <a href="#">Privacy policy</a>
               <a href="#">Terms & condition </a>
@@ -146,6 +301,20 @@
       </footer>
     
    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="index.js"></script> 
     <script>
         
@@ -206,6 +375,51 @@ function reveal(){
 
     lastScrollY = window.scrollY;
   });
+
+
+
+
+
+
+
+
+
+
+
+
+  window.addEventListener('scroll', function() {
+    var element1 = document.querySelector('.mouse_scroll1');
+    var element2 = document.querySelector('.mouse_scroll');
+   
+   
+    var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+    
+    if (scrollPercentage > 0.1 && scrollPercentage < 0.29) {
+       
+      element1.style.opacity='1';
+      element2.style.opacity='0';
+    }
+    else {
+      element1.style.opacity='0';
+      element2.style.opacity='1';
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   window.addEventListener('scroll', function() {
     var element = document.querySelector('.scrolledBG');
@@ -287,6 +501,41 @@ window.onload = function() {
         footer.style.position = "relative";
     }
 };
+
+
+var scrollTimer = -1;
+
+        function bodyScroll() {
+    
+          if (scrollTimer != -1)
+            clearTimeout(scrollTimer);
+            document.querySelector('aside').style.opacity =0;
+
+          scrollTimer = window.setTimeout("scrollFinished()", 800);
+        }
+    
+        function scrollFinished() {
+          document.querySelector('aside').style.opacity =1;
+            }
+
+
+
+
+
+
+
+
+
+            document.getElementById('btn1').addEventListener('click', function() {
+  document.getElementById('login-box').style.display = 'block';
+  document.getElementById('back-color').style.display = 'block';
+});
+
+document.getElementById('closePopup').addEventListener('click', function() {
+  document.getElementById('login-box').style.display = 'none';
+  document.getElementById('back-color').style.display = 'none';
+
+});
 
     </script>
 
